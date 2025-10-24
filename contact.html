@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Alaywan Family Foundation Inc. in Folsom, California." />
+  <title>Contact · Alaywan Family Foundation Inc.</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Alaywan Family Foundation logo" />
+      <div>
+        <h1>Alaywan Family Foundation Inc.</h1>
+        <p class="tag">Empowering communities with compassion · 501(c)(3) nonprofit</p>
+      </div>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="siteNav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p>We welcome partnerships, volunteers, and supporters who share our passion for community betterment. Reach us using the details below and we’ll respond promptly.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> <a href="tel:+16267403249">+1 626 740 3249</a></li>
+          <li><strong>Email:</strong> <a href="mailto:contact@alaywanfamily.site">contact@alaywanfamily.site</a></li>
+          <li><strong>Address:</strong> 604 Sutter Street Suite 250, Folsom, CA 95630</li>
+        </ul>
+        <form class="contact-form" name="contact" netlify>
+          <input type="hidden" name="form-name" value="contact" />
+          <label>Full Name<input name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=604+Sutter+Street,+Suite+250,+Folsom,+CA+95630&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Alaywan Family Foundation Inc.</strong> · EIN: <strong>884156966</strong> · 604 Sutter Street Suite 250, Folsom, CA 95630</p>
+      <p>Phone: <a href="tel:+16267403249">+1 626 740 3249</a> · Email: <a href="mailto:contact@alaywanfamily.site">contact@alaywanfamily.site</a></p>
+      <p>U.S. nonprofit under <strong>IRS §501(c)(3)</strong>. Donations may be tax-deductible as allowed by law.</p>
+      <small>© 2025 Alaywan Family Foundation Inc.</small>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('navToggle');
+    const nav = document.getElementById('siteNav');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
